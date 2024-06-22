@@ -78,6 +78,15 @@
   font-style: normal;
 }
 
+.h3Red1 {
+  color: var(--red1);
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .h4 {
   font-size: 36px;
   font-family: "Montserrat", sans-serif;
@@ -108,7 +117,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 .body2Reg {
@@ -127,11 +136,11 @@
   font-style: normal;
 }
 
-.body3SemiBold {
-  font-size: 16px;
+.body3Reg {
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -154,12 +163,20 @@
 /* page */
 
 body {
-  background-color: #ffffff;
+  background-color: var(--white1);
 }
 
 .socialProofSection {
   padding-left: 80px;
   padding-right: 80px;
+}
+
+.socialProofBox {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("https://utfs.io/f/fc0201b7-c736-4583-8211-972da9a6ee6b-xtnct8.png");
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
 }
 
 .socialProof {
@@ -185,6 +202,18 @@ body {
   padding-bottom: 30px;
   margin-bottom: 34px;
   gap: 30px;
+  background-image: url("https://utfs.io/f/fc0201b7-c736-4583-8211-972da9a6ee6b-xtnct8.png");
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
+  /* opacity: 0.5; */
+}
+
+.heroContent {
+  max-width: 1000px;
+}
+
+.imgOpacity {
+  opacity: 0.5;
 }
 
 /* molecules */
@@ -199,7 +228,7 @@ body {
 }
 
 .navbar a {
-  color: white;
+  color: var(--white0);
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
@@ -223,12 +252,12 @@ body {
   transform: translateX(-50%);
   width: 30px;
   height: 3px;
-  background-color: white;
+  background-color: var(--white0);
   border-radius: 2px;
 }
 
 .download-btn {
-  background-color: white;
+  background-color: var(--white0);
   color: var(--red1);
   padding: 10px 20px;
   border-radius: 50px;
@@ -250,6 +279,17 @@ body {
   padding-right: 80px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 28%,
+    rgba(255, 209, 209, 1) 100%
+  );
 }
 
 /* margin */
@@ -285,6 +325,7 @@ body {
 
 .USP {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
   padding: 80px;
@@ -363,6 +404,7 @@ body {
   padding: 30px;
   border: none;
   border-radius: 8px;
+  background-color: var(--white0);
   box-shadow: 0px 2px 10px var(--blackShadowCard);
 }
 
@@ -431,7 +473,7 @@ body {
 }
 
 .cta-button-tertiary {
-  background-color: var(--white0); /* Default state */
+  background-color: var(--white1); /* Default state */
   color: var(--red0);
   border: none;
   padding: 15px 30px;
@@ -513,6 +555,12 @@ body {
   background-color: var(--red3);
 }
 
+.cta-button-icon:active {
+  background-color: var(--red1); /* Active state */
+  color: var(--white0);
+  transform: scale(0.95);
+}
+
 .iconButtonSize {
   width: 20px;
   height: 20px;
@@ -536,6 +584,7 @@ body {
 .artikelSection {
   padding-left: 80px;
   padding-right: 80px;
+  padding-top: 50px;
 }
 
 .artikelTitle {
@@ -564,6 +613,7 @@ body {
   /* padding: 30px; */
   border: none;
   border-radius: 8px;
+  background-color: var(--white0);
   box-shadow: 0px 2px 10px var(--blackShadowCard);
 }
 
@@ -599,6 +649,7 @@ body {
   background-image: url("https://utfs.io/f/d06315a7-5a3e-47cb-8e89-75d2ac9af9dc-sj5pa5.png");
   /* background-repeat: no-repeat; */
   background-size: 100%;
+  /* opacity: 0.5; */
   color: var(--red3);
   outline-style: solid;
   outline-color: var(--white1);
@@ -669,6 +720,11 @@ body {
 }
 
 .highlight2 {
-  background-color: var(--red1);
+  background-color: var(--red3);
   border-radius: 4px;
+  width: max-content;
+}
+
+.USPContent {
+  max-width: 900px;
 }
