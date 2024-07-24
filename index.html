@@ -12,13 +12,13 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body onscroll="functionScroll()">
     <header class="header sticky">
-        <img src="https://utfs.io/f/4d070eb7-7361-4fbb-8b55-b6bc6538cf5c-1evuz.svg" alt="logo SalingJaga">
+        <img src="https://utfs.io/f/4d070eb7-7361-4fbb-8b55-b6bc6538cf5c-1evuz.svg" alt="logo SalingJaga" id="logo">
         <nav class="navbar body2RegBold">
-            <a href="#" class="nav-link active" id="produk">Produk</a>
-            <a href="#" class="nav-link" id="komunitas">Komunitas</a>
-            <a href="#" class="nav-link" id="artikel">Artikel</a>
+            <a onclick="produkNavClick()" class="nav-link" id="Navbar-produk">Produk</a>
+            <a onclick="komunitasNavClick()" class="nav-link" id="Navbar-komunitas">Komunitas</a>
+            <a onclick="artikelNavClick()" class="nav-link" id="Navbar-artikel">Artikel</a>
             <div href="#" class="download-btn">Unduh Aplikasi</div>
         </nav>
     </header>
@@ -37,149 +37,157 @@
 
                 </div>
             </div>
-            <p class="body1Reg marginBott34px">Saling Jaga membantu wanita dan anak-anak merasa aman. Fitur Minta
+            <p class="body1Reg marginBott34px" id="description">Saling Jaga membantu wanita dan anak-anak merasa aman.
+                Fitur Minta
                 Bantuan
                 membantu menghubungkan
                 pertolongan
                 dengan sesama wanita terdekat saat menghadapi kekerasan. Cepat dan mudah!</p>
             <div class="flexGapHero">
                 <button class="cta-button-primary body2RegBold">Unduh Aplikasi</button>
-                <button class="cta-button-secondary body2RegBold">Bergabung untuk Saling Menjaga</button>
+                <button onclick="closeStatClick()" class="cta-button-secondary body2RegBold">Bergabung untuk Saling
+                    Menjaga</button>
             </div>
         </div>
-        <img src="https://utfs.io/f/49f25a10-f86f-4233-a6ff-0ba54a105e2f-v4s0og.svg" alt="imageHeroPage">
+        <img src="https://utfs.io/f/bb2ffe89-df04-43de-b512-1dcaf857a713-m26jax.svg" alt="imageHeroPage">
     </div>
-
-    <div class="">
-        <div class="USP sectioUSP">
-            <H1 class="h1">Aspirasi & Tujuan Kami</H1>
-            <div class="USPContent">
-                <p class="body1Reg marginBott20px">Data Komnas Perempuan menunjukkan adanya pengaduan kasus
-                    kekerasan
-                    terhadap perempuan sepanjang 2023,
-                    mencapai </p>
-                <p class="h3Red1 highlight2 marginBott20px">4.374 kasus. </p>
-                <p class="body1Reg"> Namun, tidak semua kasus mendapatkan respons yang tepat dari
-                    pihak kepolisian, yang
-                    seringkali mengakibatkan dampak yang tragis.</p>
+    <div id="produk">
+        <div class="">
+            <div class="USP sectioUSP">
+                <H1 class="h1">Aspirasi & Tujuan Kami</H1>
+                <div class="USPContent">
+                    <p class="body1Reg marginBott20px">Data Komnas Perempuan menunjukkan adanya pengaduan kasus
+                        kekerasan
+                        terhadap perempuan sepanjang 2023,
+                        mencapai </p>
+                    <p class="h3Red1 highlight2 marginBott20px">4.374 kasus. </p>
+                    <p class="body1Reg"> Namun, tidak semua kasus mendapatkan respons yang tepat dari
+                        pihak kepolisian, yang
+                        seringkali mengakibatkan dampak yang tragis.</p>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- shape -->
-    <img src=https://utfs.io/f/fddf6bec-6779-4884-aeea-ef93db669427-1bjekh.png alt="shape">
-    <div class="USPBenefitsOfOffering">
-        <div class="USP">
-            <div class="USPContent">
-                <p class="body1Reg marginBott20px">Kami yakin bahwa ada potensi besar untuk mendorong perubahan positif
-                    yang
-                    signifikan. Bersama-sama,
-                    kita dapat saling menjaga keamanan sesama perempuan dan anak-anak dari tindak kekerasan di
-                    Indonesia. </p>
-                <p class="body1Reg">Saling Jaga hadir untuk memberikan perlindungan menyeluruh dan bantuan yang cepat
-                    dalam situasi
-                    darurat bagi wanita dan anak-anak.</p>
-            </div>
-            <div>
-                <img src=https://utfs.io/f/2c9bca2f-fd6b-42f5-908b-880914754467-7sxmw4.svg alt="imageholdingHands">
-                <H1 class="h1Red0">#DariPerempuan</H1>
-                <H1 class="h1Red0">UntukPerempuan</H1>
-            </div>
-        </div>
-    </div>
-
-    <div class="fitur">
-        <div>
-            <H1 class="marginBott10px h1">Fitur Produk</H1>
-            <p class="body1Reg">Bantuan Darurat Real-Time untuk Wanita dan Anak. </p>
-            <p class="body1Reg">Dengan Teknologi Lokasi Real-Time, Bantuan Selalu Dekat.</p>
         </div>
         <!-- shape -->
-        <img src=https://utfs.io/f/fddf6bec-6779-4884-aeea-ef93db669427-1bjekh.png alt="shape">
-    </div>
+        <img src="https://utfs.io/f/fddf6bec-6779-4884-aeea-ef93db669427-1bjekh.png" alt="shape">
+        <div class="USPBenefitsOfOffering">
+            <div class="USP">
+                <div class="USPContent">
+                    <p class="body1Reg marginBott20px">Kami yakin bahwa ada potensi besar untuk mendorong perubahan
+                        positif
+                        yang
+                        signifikan. Bersama-sama,
+                        kita dapat saling menjaga keamanan sesama perempuan dan anak-anak dari tindak kekerasan di
+                        Indonesia. </p>
+                    <p class="body1Reg">SalingJaga hadir untuk memberikan perlindungan dan bantuan yang cepat dalam
+                        situasi
+                        darurat bagi wanita dan anak-anak dalam radius 1-2 km.</p>
+                </div>
+                <div>
+                    <img src="https://utfs.io/f/2c9bca2f-fd6b-42f5-908b-880914754467-7sxmw4.svg"
+                        alt="imageholdingHands">
+                    <H1 class="h1Red0">#DariPerempuan</H1>
+                    <H1 class="h1Red0">UntukPerempuan</H1>
+                </div>
+            </div>
+        </div>
 
-    <div class="fiturSection">
-        <img src=https://utfs.io/f/3b75c205-1aeb-4952-9b66-6c2855a9f975-yr3xyi.svg alt="imageFitur1">
-        <div>
-            <img class="iconFitur marginBott20px" src=https://utfs.io/f/6287913b-3a21-41ed-b993-e74cf817da5c-axpbv2.svg
-                alt="iconLocation">
-            <img class="iconFitur marginBott20px" src=https://utfs.io/f/e5c5fb53-53bf-45a1-87e5-e395174b2c2f-70ddot.svg
-                alt="iconBell">
-            <H3 class="h3 marginBott20px">Navigasi & Notifikasi Real-time </H3>
-            <p class="body1Reg marginBott20px">Navigasi rute ke pengguna yang meminta bantuan, memastikan bantuan tiba
-                tepat waktu.
-                Notifikasi
-                langsung saat seseorang di sekitarmu meminta bantuan. Kamu dapat memberikan dukungan secepat
-                mungkin.</p>
-            <div class="flexGapButton">
-                <!-- appstore -->
-                <button class="cta-button-icon">
-                    <img class="iconButtonSize" src=https://utfs.io/f/2c7a63d7-4325-47f9-b8eb-71e418c310ef-2mj18s.png
-                        alt="playstore">
-                </button>
-                <!-- playstore -->
-                <button class="cta-button-icon">
-                    <img class="iconButtonSize" src=https://utfs.io/f/48bdc690-d79f-4685-a44f-930c4d56a146-86epzc.png
-                        alt="playstore">
-                </button>
+        <div class="fitur">
+            <div>
+                <H1 class="marginBott10px h1">Fitur Produk</H1>
+                <p class="body1Reg">Bantuan Darurat Real-Time untuk Wanita dan Anak. </p>
+                <p class="body1Reg">Dengan Teknologi Lokasi Real-Time, Bantuan Selalu Dekat.</p>
+            </div>
+            <!-- shape -->
+            <img src="https://utfs.io/f/fddf6bec-6779-4884-aeea-ef93db669427-1bjekh.png" alt="shape">
+        </div>
+
+        <div class="fiturSection">
+            <img src="https://utfs.io/f/ae26e98d-05a6-45f9-81f5-377942a7025e-1ebwhl.svg" alt="imageFitur1">
+            <div>
+                <img class="iconFitur marginBott20px"
+                    src="https://utfs.io/f/6287913b-3a21-41ed-b993-e74cf817da5c-axpbv2.svg" alt="iconLocation">
+                <img class="iconFitur marginBott20px"
+                    src="https://utfs.io/f/e5c5fb53-53bf-45a1-87e5-e395174b2c2f-70ddot.svg" alt="iconBell">
+                <H3 class="h3 marginBott20px">Navigasi & Notifikasi Real-time </H3>
+                <p class="body1Reg marginBott20px">Navigasi rute ke pengguna yang meminta bantuan, memastikan bantuan
+                    tiba
+                    tepat waktu.
+                    Notifikasi
+                    langsung saat seseorang di sekitarmu meminta bantuan. Kamu dapat memberikan dukungan secepat
+                    mungkin.</p>
+                <div class="flexGapButton">
+                    <!-- appstore -->
+                    <button class="cta-button-icon">
+                        <img class="iconButtonSize"
+                            src=https://utfs.io/f/2c7a63d7-4325-47f9-b8eb-71e418c310ef-2mj18s.png alt="playstore">
+                    </button>
+                    <!-- playstore -->
+                    <button class="cta-button-icon">
+                        <img class="iconButtonSize"
+                            src=https://utfs.io/f/48bdc690-d79f-4685-a44f-930c4d56a146-86epzc.png alt="playstore">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="fiturSection">
+            <div>
+                <img class="iconFitur marginBott20px"
+                    src=https://utfs.io/f/8e971992-5a78-4968-ae3d-279d255084ed-70ddny.svg alt="iconDanger">
+                <H3 class="h3 marginBott20px">Panggil Bantuan </H3>
+                <p class="body1Reg">Mendapatkan segera bantuan dari wanita terdekat dalam radius 1-2 km saat kamu
+                    menghadapi
+                    kekerasan fisik atau seksual.</p>
+                <p class="body1Reg marginBott20px">Akses mudah ke tombol darurat, bahkan dalam situasi darurat yang
+                    paling
+                    genting sekalipun.</p>
+                <div class="flexGapButton">
+                    <!-- appstore -->
+                    <button class="cta-button-icon">
+                        <img class="iconButtonSize"
+                            src=https://utfs.io/f/2c7a63d7-4325-47f9-b8eb-71e418c310ef-2mj18s.png alt="playstore">
+                    </button>
+                    <!-- playstore -->
+                    <button class="cta-button-icon">
+                        <img class="iconButtonSize"
+                            src=https://utfs.io/f/48bdc690-d79f-4685-a44f-930c4d56a146-86epzc.png alt="playstore">
+                    </button>
+                </div>
+            </div>
+            <img src="https://utfs.io/f/d74f2ed0-7c38-4394-b774-5422f1a51173-1ebwhk.svg" alt="imageFitur2">
+        </div>
+
+        <div class="fiturSection">
+            <img src="https://utfs.io/f/00478fc5-b1c9-424b-bb8f-1cbb932172c9-1ebwhj.svg" alt="imageFitur3">
+            <div>
+                <img class="iconFitur marginBott20px"
+                    src=https://utfs.io/f/38252246-ca66-4115-9d65-aecbc0f82ba7-70ddpo.svg alt="iconNote">
+                <H3 class="h3 marginBott20px">Pencatatan Kronologi</H3>
+                <p class="body1Reg marginBott20px">Simpan catatan kronologi kejadian dan informasi penting lainnya yang
+                    bisa
+                    membantu
+                    proses
+                    hukum selanjutnya.</p>
+                <div class="flexGapButton">
+                    <!-- appstore -->
+                    <button class="cta-button-icon">
+                        <img class="iconButtonSize"
+                            src=https://utfs.io/f/2c7a63d7-4325-47f9-b8eb-71e418c310ef-2mj18s.png alt="playstore">
+                    </button>
+                    <!-- playstore -->
+                    <button class="cta-button-icon">
+                        <img class="iconButtonSize"
+                            src=https://utfs.io/f/48bdc690-d79f-4685-a44f-930c4d56a146-86epzc.png alt="playstore">
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="fiturSection">
-        <div>
-            <img class="iconFitur marginBott20px" src=https://utfs.io/f/8e971992-5a78-4968-ae3d-279d255084ed-70ddny.svg
-                alt="iconDanger">
-            <H3 class="h3 marginBott20px">Panggil Bantuan </H3>
-            <p class="body1Reg">Mendapatkan segera bantuan dari wanita terdekat dalam radius 10 meter
-                saat kamu
-                menghadapi
-                kekerasan fisik atau seksual.</p>
-            <p class="body1Reg marginBott20px">Akses mudah ke tombol darurat, bahkan dalam situasi darurat yang paling
-                genting sekalipun.</p>
-            <div class="flexGapButton">
-                <!-- appstore -->
-                <button class="cta-button-icon">
-                    <img class="iconButtonSize" src=https://utfs.io/f/2c7a63d7-4325-47f9-b8eb-71e418c310ef-2mj18s.png
-                        alt="playstore">
-                </button>
-                <!-- playstore -->
-                <button class="cta-button-icon">
-                    <img class="iconButtonSize" src=https://utfs.io/f/48bdc690-d79f-4685-a44f-930c4d56a146-86epzc.png
-                        alt="playstore">
-                </button>
-            </div>
-        </div>
-        <img src=https://utfs.io/f/5f6f59d6-a907-459c-8fa6-041a2ab52e18-jlo1c9.svg alt="imageFitur2">
-    </div>
-
-    <div class="fiturSection">
-        <img src=https://utfs.io/f/d0f25563-73f2-4559-b911-5306fa3588a8-yr3xyg.svg alt="imageFitur3">
-        <div>
-            <img class="iconFitur marginBott20px" src=https://utfs.io/f/38252246-ca66-4115-9d65-aecbc0f82ba7-70ddpo.svg
-                alt="iconNote">
-            <H3 class="h3 marginBott20px">Pencatatan Kronologi</H3>
-            <p class="body1Reg marginBott20px">Simpan catatan kronologi kejadian dan informasi penting lainnya yang bisa
-                membantu
-                proses
-                hukum selanjutnya.</p>
-            <div class="flexGapButton">
-                <!-- appstore -->
-                <button class="cta-button-icon">
-                    <img class="iconButtonSize" src=https://utfs.io/f/2c7a63d7-4325-47f9-b8eb-71e418c310ef-2mj18s.png
-                        alt="playstore">
-                </button>
-                <!-- playstore -->
-                <button class="cta-button-icon">
-                    <img class="iconButtonSize" src=https://utfs.io/f/48bdc690-d79f-4685-a44f-930c4d56a146-86epzc.png
-                        alt="playstore">
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="socialProofBox">
+    <div class="socialProofBox" id="komunitas">
         <!-- socialProof Section -->
         <div class="socialProofSection">
-            <h4 class="marginBott10px socialProof h4">Testimoni Komunitas Kami</h4>
+            <h4 class="marginBott10px socialProof h4" id="testimoni">Testimoni Komunitas Kami</h4>
             <p class="body1Reg socialProof"> Apa yang mereka katakan tentang kami </p>
 
             <div class="cardReviewContainer">
@@ -323,10 +331,10 @@
     </div>
 
     <!-- Artikel / you might also like -->
-    <div class="artikelSection">
+    <div class="artikelSection" id="artikel">
         <div class="artikelTitle marginBott20px">
             <div>
-                <H4 class="marginBott10px h4">Baca Artikel Tentang Wanita</H4>
+                <H4 class="marginBott10px h4" id="judArtikel">Baca Artikel Tentang Wanita</H4>
             </div>
             <button class="cta-button-tertiary body2RegBold">Lihat Semua</button>
         </div>
@@ -477,34 +485,63 @@
         </button>
     </div>
 
-    <!-- Form -->
-    <div>
 
-        <input id="name">
-        <input id="city">
-        <input id="email">
-        <input id="zip-code">
-        <label id="check">
-            <input id="status" type="checkbox">
-        </label>
-        <button id="submit-form">Submit</button>
-        <div id="warning"></div>
-    </div>
-
-
-    <!-- closing statement -->
+    <!-- closing statement - Form
     <div class="centerClosingStatement ">
         <div class="closingStatement">
             <div class="flexTitle">
-                <div>
-                    <img src=https://utfs.io/f/5bb8cf52-80af-49e0-a99b-5082f84a8933-xeazxb.png alt="logo">
-                </div>
-                <div>
-                    <H2 class="h2 marginBott50px">Jadilah bagian dari komunitas yang saling menjaga.</H2>
+                <img src="https://utfs.io/f/5bb8cf52-80af-49e0-a99b-5082f84a8933-xeazxb.png" alt="imgClosingStatement">
+
+                <div class="contextClosingStatement">
+                    <H2 class="h2 marginBott30px">Jadilah bagian dari komunitas yang saling menjaga.</H2>
                     <button class="cta-button-closingStatement body2RegBold">Unduh Aplikasi</button>
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <!-- closing statement - Form-->
+    <div class="centerClosingStatement">
+        <div class="closingStatement" id="closingStatement">
+            <div class="flexTitle">
+                <img src="https://utfs.io/f/5bb8cf52-80af-49e0-a99b-5082f84a8933-xeazxb.png" alt="logo">
+
+                <div class="contextClosingStatement">
+                    <H2 class="h2 marginBott30px">Jadilah bagian dari komunitas yang saling menjaga.</H2>
+                    <!-- Form -->
+                    <form id="my-form">
+                        <input id="name" type="text" name="nama" placeholder="Masukan nama lengkapmu">
+                        <input id="city" type="text" name="kota" placeholder="Masukan kota tempat tinggalmu">
+                        <input id="email" type="email" name="email" placeholder="Masukan alamat emailmu">
+                        <input id="zip-code" type="number" name="kodepos" placeholder="Masukan kode pos alamatmu">
+                        <input id="status" type="checkbox">
+                        <label id="check" class="body2Reg">Dengan ini saya menyatakan data yang diisi
+                            pada form ini adalah benar dan telah sesuai
+                        </label>
+                        <button type="submit" id="submit-form"
+                            class="CTA-Button-Popup body1Bold marginBott10px">Submit</button>
+                        <div id="warningContainer" class="body2Reg warningStyle" style="visibility: hidden;">
+                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <circle cx="12" cy="17" r="1" fill="#f45049"></circle>
+                                    <path d="M12 10L12 14" stroke="#f45049" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M3.44722 18.1056L10.2111 4.57771C10.9482 3.10361 13.0518 3.10362 13.7889 4.57771L20.5528 18.1056C21.2177 19.4354 20.2507 21 18.7639 21H5.23607C3.7493 21 2.78231 19.4354 3.44722 18.1056Z"
+                                        stroke="#f45049" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                            <div id='warning'>Mohon periksa form Anda sekali lagi</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
 
@@ -517,28 +554,34 @@
             <a href="#"><img src="https://utfs.io/f/cee83aee-59aa-4e6b-a6d7-ff395e5db837-vnrf3v.png"
                     alt="Download on the App Store" class="store-badge"></a>
         </div>
-        <div class="footer-section">
+        <div class="footer-section marginBott10px">
             <h4 class="body1Bold">Company</h4>
-            <a href="#">About Us</a>
-            <a href="#">Blog</a>
-            <a href="#">Careers</a>
-            <a href="#">Contact Us</a>
+            <a href="#" class="body3Reg">About Us</a>
+            <a href="#" class="body3Reg">Blog</a>
+            <a href="#" class="body3Reg">Careers</a>
+            <a href="#" class="body3Reg">Contact Us</a>
         </div>
-        <div class="footer-section">
+        <div class="footer-section marginBott10px">
             <h4 class="body1Bold">Support</h4>
-            <a href="#">Help Center</a>
-            <a href="#">Safety Center</a>
-            <a href="#">Community Guidelines</a>
+            <a href="#" class="body3Reg">Help Center</a>
+            <a href="#" class="body3Reg">Safety Center</a>
+            <a href="#" class="body3Reg">Community Guidelines</a>
         </div>
-        <div class="footer-section">
+        <div class="footer-section marginBott10px">
             <h4 class="body1Bold">Legal</h4>
-            <a href="#">Cookies Policy</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Law Enforcement</a>
+            <a href="#" class="body3Reg">Cookies Policy</a>
+            <a href="#" class="body3Reg">Privacy Policy</a>
+            <a href="#" class="body3Reg">Terms of Service</a>
+            <a href="#" class="body3Reg">Law Enforcement</a>
         </div>
-        <div class="footer-logo">
-            <img src="https://utfs.io/f/ce08e188-1214-4e47-b6d3-26dd70334799-1evuz.png" alt="Saling Jaga Logo">
+
+        <div class="footer-section">
+            <img class="marginBott20px" src="https://utfs.io/f/ce08e188-1214-4e47-b6d3-26dd70334799-1evuz.png"
+                alt="Saling Jaga Logo">
+            <h4 class="body1Bold">supported by:</h4>
+            <a href="https://skilvul.com" id="link"><img class="footer-logoimg"
+                    src="https://utfs.io/f/b5a78f14-11b4-49c3-89a3-f75763fe99c5-3z3iys.svg"
+                    alt="Logo Skilvul Link to the Skilvul Website"></a>
         </div>
     </footer>
 
