@@ -1,5 +1,9 @@
 # Skilvul-PI Landing Page: SalingJaga
 
+## Live Demo
+
+Check out the deployed landing page here: [https://vptlka0.github.io/Skilvul-PI-LandingPage-SalingJaga/](https://vptlka0.github.io/Skilvul-PI-LandingPage-SalingJaga/)
+
 #
 
 ## Project Explanation
